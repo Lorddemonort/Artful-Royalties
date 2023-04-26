@@ -48,6 +48,30 @@
         font-size: 15px;
         font-weight: bold;
     }
+    .onhover {
+  position: relative;
+}
+
+.onhover:hover {
+  filter: brightness(0.7); /* Darken the image */
+}
+
+.onhover::after {
+  content: "\f2ed"; /* Unicode for the delete icon */
+  font-family: "Font Awesome 5 Free"; /* Use Font Awesome for the icon */
+  font-weight: 900;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 20px;
+  color: #ffffff; /* Set the color of the icon */
+  opacity: 0; /* Make the icon invisible by default */
+  transition: opacity 0.3s ease-in-out; /* Add a transition effect for the opacity */
+}
+
+.onhover:hover::after {
+  opacity: 1; /* Make the icon visible on hover */
+}
 
   </style>
 </head>
