@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Artful Royalties</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">Artful Royalties</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">My Profile</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Upload Artwork</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Logout</a>
+	      </li>
+	    </ul>
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          <i class="fa fa-user"></i>
+	        </a>
+	        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+	          <a class="dropdown-item" href="#">Settings</a>
+	          <a class="dropdown-item" href="#">Logout</a>
+	        </div>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="jumbotron text-center">
+		<h1>Welcome to Artful Royalties!</h1>
+		<p>Number of uploaded artworks: <span id="artworkCount">0</span></p>
+		<p>Estimated earnings: <span id="earnings">$0</span></p>
+		<button class="btn btn-primary" id="uploadButton">Upload Artwork</button>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row" id="gallery">
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<div class="jumbotron text-center">
+  <h1>Artful Royalties</h1>
+  <p>Upload your artworks and earn royalties</p>
+  <p>Number of artworks uploaded: <span id="num-artworks">0</span></p>
+  <p>Estimated earnings: $<span id="estimated-earnings">0.00</span></p>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Upload Artwork</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Profile</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-9">
+      <div class="row" id="artwork-row">
+        <!-- Artwork images will be displayed here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let numArtworks = 0;
+  let estimatedEarnings = 0;
+
+  // Function to display uploaded artworks on the homepage
+  function displayArtworks() {
+    const artworkRow = document.getElementById('artwork-row');
+
+    // Code to fetch artwork images and display them goes here
+
+    // Update the number of artworks
+    document.getElementById('num-artworks').innerHTML = numArtworks;
+  }
+
+  // Function to update the estimated earnings
+  function updateEarnings() {
+    // Code to calculate estimated earnings goes here
+
+    // Update the estimated earnings
+    document.getElementById('estimated-earnings').innerHTML = estimatedEarnings.toFixed(2);
+  }
+
+  // Call the functions to display artworks and update earnings
+  displayArtworks();
+  updateEarnings();
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('BG.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .artist-container, .portfolio-container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      backdrop-filter: blur(5px);
+    }
+
+    .portfolio-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .artist-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .artist-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .image-grid {
+        background-color: rgba(0, 0, 0, 0);
+        padding: 20px;
+        border-radius: 10px;
+        }
+        
+    .Earnings{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid mt-2">
+    <div class="row">
+    <div class="col-md-12 artist-container">
+    <div class="row">
+        <div class="col-md-5">
+        <div class="artist-info">
+            <img src="Artist.jpg" alt="Artist Profile Photo" class="artist-photo">
+            <div>
+            <h2>Sam Yang</h2>
+            <p>@samdoesarts</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-6 text-start">
+            <br>
+        <p>Earnings: <span class="fw-bold fs-1">$1,000</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Referrals: <span class="fw-bold fs-1">10</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Popularity Score: <span class="fw-bold fs-1">5000</span></p>
+        </div>
+    </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-15 offset-md-0 portfolio-container">
+        <div class="portfolio-header">
+          <h3>Portfolio</h3>
+          <button class="btn btn-primary">+ Upload</button>
+        </div>
+        <div class="row row-cols-4 mt-4 image-grid">
+          <img src="Image2.jpg" class="col img-thumbnail onhover">
+          <img src="Image3.jpg" class="col img-thumbnail onhover">
+          <img src="Image4.jpg" class="col img-thumbnail onhover">
+          <img src="Image1.jpg" class="col img-thumbnail onhover">
+          <img src="Image5.jpg" class="col img-thumbnail onhover">
+          <img src="Image6.jpg" class="col img-thumbnail onhover">
+          <img src="Image7.jpg" class="col img-thumbnail onhover">
+          <img src="Image8.jpg" class="col img-thumbnail onhover">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

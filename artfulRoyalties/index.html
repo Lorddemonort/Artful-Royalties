@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Artful Royalties</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Artful Royalties</a>
+	</nav>
+	<div class="container mt-4">
+		<h1>Image Generator</h1>
+		<p class="credits">You have <span id="credits">100</span> credits.</p>
+		<div class="form-group">
+			<label for="prompt">Enter Prompt:</label>
+			<input type="text" class="form-control" id="prompt" placeholder="Enter prompt">
+		</div>
+		<div class="text-center">
+			<button type="button" class="btn btn-primary" id="generate-btn">Generate Image</button>
+			<div id="loader" class="lds-dual-ring d-none"></div>
+		</div>
+		<div class="mt-4">
+			<img src="" class="img-fluid" id="generated-image">
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
