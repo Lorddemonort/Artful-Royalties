@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Set the background color and padding for the body */
+    body {
+        background-image: url('BG.png');
+        background-size:auto;
+        background-repeat: no-repeat;
+    }
+    body::-webkit-scrollbar {
+        display: none; 
+      }
+    .artist-container, .portfolio-container {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 16px;
+        border-radius: 10px;
+        color: white;
+        backdrop-filter: blur(5px);
+    }
+      .artist-photo {
+        width: 240px;
+        margin-right: 50px;
+      }
+    /* Set the style for the contact form */
+    #contact-form {
+      position:relative;
+      top:15px;
+      right:550px;
+      width:100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 45px 45px;
+      border-radius: 10px;
+      color: white;
+      backdrop-filter: blur(5px); 
+
+    }
+    /* Set the style for the form fields */
+    #contact-form input[type="text"],#contact-form input[type="contact"], #contact-form input[type="email"], #contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+    }
+    /* Set the style for the form submit button */
+    #contact-form input[type="submit"] {
+      background-color:  #06bfed;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+        position:fixed;
+        top: 94%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    /* Set the style for the form submit button on hover */
+    #contact-form input[type="submit"]:hover {
+      background-color: #34e7ea;
+    }
+    /* Set the style for the form title */
+    #contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    footer{
+        width:100%;
+        margin-top:30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 16px;
+        border-radius: 10px;
+        color: white;
+        backdrop-filter: blur(5px);
+      }
+  </style>
+</head>
+<body>
+    <div class="container-fluid mt-2">
+        <div class="row">
+        <div class="col-md-12 artist-container">
+        <div class="row">
+            <div class="col-md-5">
+            <div class="artist-info">
+                <img src="Artful logo.png" alt="Artist Profile Photo" class="artist-photo">
+            </div>
+            </div>
+        </div>
+        </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form id="contact-form">
+          <h2>Contact Us</h2>
+          <input type="text" id="name" name="name" placeholder="Your name">
+          <input type="text" id="contact" name="contact" placeholder="Your mobile number">
+          <input type="email" id="email" name="email" placeholder="Your email">
+          <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Copyright © ARTFULL ROYALTIES, Inc. All rights
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p>Address: Loni Kalbhor,Pune,Maharashtra,412201</p>
+          <p>Phone:123456789</p>
+          <p>Email: example@example.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

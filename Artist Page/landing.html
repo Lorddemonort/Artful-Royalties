@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Artfull Landing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image/jpg" href="/site_logo.png">
+  <!-- Custom CSS -->
+  <style>
+    /* Set the background color and padding for the body */
+    body {
+        background-image: url('/Landing BG.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    body::-webkit-scrollbar {
+        display: none; 
+      }
+    #Landing_Group{
+        width: 100%;
+        z-index: -1;
+    }
+    .artist-photo {
+        width: fixed;
+        height: 90px;
+        top:5px;
+        margin-right: 20px;
+      }
+      #Artist_user{
+            width: 130px;
+            position: absolute;
+            top: 30px;
+            right: 180px;
+            z-index: 10;
+            cursor: pointer;
+            border-radius: 500px;
+            transition: transform 0.4s ease-in-out;
+      }
+      #Artist_user:hover{
+        background-color: #3dd8ff78;
+        box-shadow: 0 0 100px 30px #3dd8ff;
+        transform: scale(1.099);
+      }
+      #Artist{
+            width: 130px;
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            z-index: 10;
+            cursor: pointer;
+            border-radius: 500px;
+            transition: transform 0.4s ease-in-out;
+      }
+      #Artist:hover{
+        background-color: #3dd8ff78;
+        box-shadow: 0 0 100px 30px #3dd8ff;
+        transform: scale(1.099);
+      }
+      #trynow{
+            width:140px;
+            position: absolute;
+            top: 480px;
+            left: 530px;
+            z-index: 10;
+            cursor: pointer;
+            border-radius: 500px;
+            transition: transform 0.4s ease-in-out;
+            animation: glowing 2000ms infinite;
+      }
+      @keyframes glowing {
+        0% {
+          background-color: #3dd8ff78;
+          box-shadow: 0px 0px 100px 30px #3dd8ff;
+        }
+        25% {
+            background-color: #3dd8ff78;
+          box-shadow: 0 0px 120px 20px #3dd8ff;
+        }
+        50% {
+            background-color: #3dd8ff78;
+          box-shadow: 0 0 150px 30px #3dd8ff;
+        }
+        75% {
+            background-color: #3dd8ff78;
+          box-shadow: 0 0 120px 20px #3dd8ff;
+        }
+        100% {
+            background-color: #3dd8ff78;
+          box-shadow: 0 0 100px 30px #3dd8ff;
+        }
+      }
+      #trynow:hover{
+        transform: scale(1.099);
+      }
+      .content{
+        color:white;
+        text-align:left;
+        margin-left:30px;
+        max-width: 700px;
+      }
+      .content h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:2em;
+        padding:1px;
+        line-height:1.5em;
+        margin-right: 10px;
+      }
+
+      #contact-form {
+        position:relative;
+        top:15px;
+        right:550px;
+        width:100%;
+        background-color: rgba(178, 156, 156, 0.181);
+        padding: 45px 45px;
+        border-radius: 10px;
+        color: white;
+        backdrop-filter: blur(1000px); 
+  
+      }
+      /* Set the style for the form fields */
+      #contact-form input[type="text"],#contact-form input[type="contact"], #contact-form input[type="email"], #contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+      }
+      /* Set the style for the form submit button */
+      #contact-form input[type="submit"] {
+        background-color:  #06bfed;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+          position:fixed;
+          top: 94%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+      }
+      /* Set the style for the form submit button on hover */
+      #contact-form input[type="submit"]:hover {
+        background-color: #34e7ea;
+      }
+    footer{
+        width:100%;
+        margin-top:30px;
+        background-color: rgba(178, 156, 156, 0.181);
+        padding: 16px;
+        border-radius: 10px;
+        color: white;
+        backdrop-filter: blur(1000px);
+      }
+      .footer-logo{
+        width:120px;
+      }
+      .f-contact i{
+        background:white;
+        color:black;
+        padding:10px;
+        font-size:16px;
+        margin:20px 5px;
+        border-radius: 50%;
+        transition:0.4s ease;
+      }
+      .f-contact i:hover{
+        background:rgb(62, 228, 178);
+        color:white;
+        border:1px solid white;
+      }
+  </style>
+</head>
+<body>
+    <div class="container-fluid mt-2">
+        <div class="row">
+        <div class="col-md-12 artist-container">
+        <div class="row">
+            <div class="col-md-5">
+            <div class="artist-info">
+                <img src="Artful logo.png" alt="Artist Profile Photo" class="artist-photo">
+            </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="trybutton">
+                <img src="/Try Now Button.png" id="trynow" onclick="window.location.href='/login.html'"/>
+        </div>
+        <div class="Artist_user">
+            <img src="/User_Login.png" id="Artist_user" onclick="window.location.href='/login.html'"/>
+        </div>
+        <div class="Artist">
+            <img src="/Sign_Up.png" id="Artist" onclick="window.location.href='/Artist.html'"/>
+        </div>
+        <img src="/Group 20.png" id="Landing_Group">
+        <div class="row">
+            <div class="col-md-12">
+              <div class="content">
+                <h1>Artful Royalties </h1>
+                <p>Aims to give artisans their fair share when their artworks are<br> 
+                    used to train Artificial Intelligence (AI) models for image generation.<br>
+                    The project proposes a subscription-based service that uses deep<br> 
+                    learning algorithms to train AI models on high-quality artworks provided by artists, <br>
+                    which are then used to generate realistic images based on prompts. </p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 offset-md-3 contact">
+                <form id="contact-form">
+                  <h2>Contact Us</h2>
+                  <input type="text" id="name" name="name" placeholder="Your name">
+                  <input type="text" id="contact" name="contact" placeholder="Your mobile number">
+                  <input type="email" id="email" name="email" placeholder="Your email">
+                  <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        <!--footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        <img src="Artful logo.png" alt="Artist Profile Photo" class="footer-logo">
+          <p>Copyright © ARTFUL ROYALTIES, Inc. All rights
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p>Address: Loni Kalbhor,Pune,Maharashtra,412201</p>
+          <p>Phone:123456789</p>
+          <p>Email: example@example.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>--->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <img src="Artful logo.png" alt="Artist Profile Photo" class="footer-logo">
+      <span class="mb-3 mb-md-0 text-muted"> © 2022 Company, Inc</span>
+    </div>
+    <div class="f-contact">
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-telegram"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
